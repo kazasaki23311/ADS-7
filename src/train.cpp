@@ -51,7 +51,7 @@ int Train::getLength() {
         break;
         }
       }
-    if (allLight) {
+    if (allLight && step > 1) {
       return step;
       }
     for (int i = 0; i < step; i++) {
