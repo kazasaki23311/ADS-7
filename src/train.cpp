@@ -54,6 +54,10 @@ int Train::getLength() {
     if (allLight) {
       return step;
       }
+    for (int i = 0; i < step; i++) {
+      now = now->prev;
+      countOp++;
+    }
     step++;
     }
 }
