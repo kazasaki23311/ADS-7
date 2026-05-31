@@ -43,7 +43,7 @@ int main() {
         }
       opRandom = totalRandom / 5;
       }
-    int64_t nSquared = n * n;
+    int64_t nSquared = static_cast<int64_t>(n) * n;
     std::cout << std::setw(10) << n
       << std::setw(15) << opFalse
       << std::setw(15) << opTrue
